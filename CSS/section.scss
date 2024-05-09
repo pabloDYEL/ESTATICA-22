@@ -1,0 +1,29 @@
+section{
+	width: 100%;
+	display: flex;
+	place-content: center;
+	.explore{
+		border-radius: 20px;
+		border: 2.5px solid #8ACCC0;
+		padding: 10px 15px;
+		cursor: pointer;
+		color: #519892;
+		transition: .3s;
+		margin: 20px 0px 50px 0px;
+		&:hover{
+			transform: scale(1.015);
+			transition: .3s;
+		}
+		a{
+			all: unset;
+			cursor: pointer;
+			font-weight: 500;
+		}
+	}	
+}
+
+section.open{
+	visibility: hidden;
+	opacity: 0;
+	display: none;
+}

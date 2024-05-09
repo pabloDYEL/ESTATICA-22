@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="CSS2/normalize.css">
+	<link rel="stylesheet" href="CSS2/styles.css">
+	<link rel="stylesheet" href="CSS2/fonts.css">
+	<link rel="icon" type="image/x-icon" href="IMG/icon.png">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.slim.min.js"></script>
+	<script src="JS/script2.js"></script>
+	<title></title>
+</head>
+<body>
+	<aside>
+		<div class="before-header">
+			<header>
+				<div class="user-img">
+					<img src="IMG2/user1.png" alt="User">
+				</div>
+				<div class="second-child-header">
+					<div class="activity-img">
+						<img src="IMG2/group.svg" alt="Group" title="Comunidades">
+					</div>
+					<div class="activity-img">
+						<img src="IMG2/histories.png" alt="Histories" title="Estados">
+					</div>
+					<div class="activity-img">
+						<img src="IMG2/messages.svg" alt="Messages" title="Nuevo chat">
+					</div>
+					<div class="activity-img">
+						<img src="IMG2/options.svg" alt="Options" title="Menú">
+					</div>
+				</div>
+			</header>
+		</div>
+		<nav>
+			<div class="search-bar">
+				<div class="magnifying-img">
+					<img src="IMG2/magnifying.svg" alt="Magnifying">
+				</div>
+				<div class="search-input" >
+					<input type="text" placeholder="Busca un chat o inicia uno nuevo." title="Cuadro de texto para ingresar la búsqueda">
+				</div>
+			</div>
+			<div class="filter">
+				<img src="IMG2/list.svg" alt="List">
+			</div>
+		</nav>
+		<div class="overflow">
+			<div class="before-article">
+				<div class="article">
+					<div class="article-child">
+						<div class="user-img">
+							<img src="IMG2/user1.png" alt="Profile" >
+						</div>
+						<div class="chat-outside">
+							<div title="Daniel" class="chat-message">
+								<h3>Daniel (Tú)</h3>
+							</div>
+							<div class="chat-message-1">
+								<div class="read-img">
+									<img src="IMG2/check.svg" alt="Check">
+								</div>
+								<div title="Lista de compras:">
+									<p>Lista de compras:</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="article-child-2">
+						<div>
+							<h2>10:23</h2>
+						</div>
+						<div class="expand-img">
+							<img src="IMG2/expand.svg" alt="Expand">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="post-footer">
+				<footer>
+					<div class="lock-img">
+						<img src="IMG2/lock.svg" alt="Lock">
+					</div>
+					<div>
+						<p>Tus mensajes personales están <span>cifrados de extromo a extremo</span>.</p>
+					</div>
+				</footer>
+			</div>
+		</div>
+	</aside>
+	<main>
+		<section>
+			<img src="IMG2/photo2.png" alt="WhatsApp-Web">		
+		</section>
+		<div class="text">
+			<h1>WhatsApp Web</h1>
+			<p>Envía y recibe mensajes sin necesidad de tener tu teléfono conectado. <br> Usa WhatsApp en hasta 4 dispositivos vinculados y 1 teléfono a la vez.</p>
+		</div>
+		<div class="end-to-end">
+			<div class="last-lock">
+				<img src="IMG2/lock.svg" alt="Lock">
+			</div>
+			<div>
+				<p>Cifrado de extreamo a extremo</p>
+			</div>
+		</div>
+		<div class="green-bar">
+		</div>
+		<div class="chat">
+			<div class="nav-profile">
+				<div class="user-details">
+					<div title="Detalles del perfil" class="details-img">
+						<img src="IMG2/user1.png" alt="User">
+					</div>
+					<div class="details-text">
+						<h4>Daniel (Tú)</h4>
+						<p>Mensaje a este mismo número</p>
+					</div>
+				</div>
+				<div class="other-options">
+					<div title="Buscar..." class="option-img">
+						<img src="IMG2/magnifying.svg" alt="Magnifying">
+					</div>
+					<div title="Menú" class="option-img">
+						<img src="IMG2/options.svg" alt="Options">
+					</div>
+				</div>
+			</div>
+			<div class="input-messaging">
+				<div class="output-message" id="contenedor-resultados">
+					<div class="reaction">
+						<div id="hora"></div>
+						<div class="seen-message">
+							<img src="IMG2/check.svg" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="write-message">
+				<div class="emojis-clip">
+					<div class="emojis-clip-img">
+						<img src="IMG2/emoji.svg" alt="Emojis">
+					</div>
+					<div title="adjuntar" class="emojis-clip-img">
+						<img src="IMG2/clip.svg" alt="Clip">
+					</div>
+				</div>
+				<form onsubmit="mostrarResultado(); return false;">
+					<div class="place-message">
+						<input id="texto" type="text" name="nue" placeholder="Escribe un mensaje aquí">
+					</div>
+					<div title="adjuntar" class="send">
+						<input type="submit" placeholder="">
+					</div>
+				</form>
+			</div>
+		</div>
+	</main>
+</body>
+</html>
+

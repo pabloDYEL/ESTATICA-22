@@ -1,0 +1,130 @@
+nav {
+  width: 100%;
+  background: #128C7F;
+}
+nav .child-nav {
+  margin: 0 auto;
+  width: 95%;
+  max-width: 1000px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: white;
+  padding: 10px 0px;
+}
+nav .child-nav .logo-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2.5px;
+}
+nav .child-nav .logo-name .logo {
+  width: 100%;
+  max-width: 40px;
+}
+nav .child-nav .logo-name .logo img {
+  width: 100%;
+}
+nav .child-nav .logo-name h1 {
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.6px;
+}
+nav .child-nav .grandchild-nav {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+nav .child-nav .grandchild-nav a {
+  margin: 0px 15px;
+  text-decoration: none;
+  color: white;
+  font-size: 13.5px;
+}
+nav .child-nav .grandchild-nav select {
+  all: unset;
+  cursor: pointer;
+  color: white;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  padding: 5px;
+}
+nav .child-nav .grandchild-nav option {
+  color: white;
+  background: #128C7F;
+  cursor: pointer;
+}
+nav .child-nav .burger {
+  display: none;
+  z-index: 1001;
+}
+nav .child-nav .burger .menu, nav .child-nav .burger .menu-open {
+  width: 100%;
+  max-width: 35px;
+}
+nav .child-nav .burger .menu img, nav .child-nav .burger .menu-open img {
+  width: 100%;
+  cursor: pointer;
+}
+nav .child-nav .burger .menu {
+  visibility: visible;
+  opacity: 1;
+}
+nav .child-nav .burger .menu.open {
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+nav .child-nav .burger .menu-open {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+nav .child-nav .burger .menu-open.open {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media (max-width: 848px) {
+  .child-nav .grandchild-nav {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 681px) {
+  nav .grandchild-nav {
+    display: none;
+  }
+  nav .child-nav .burger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+  }
+}

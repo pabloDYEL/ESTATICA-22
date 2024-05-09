@@ -1,0 +1,109 @@
+main{
+	width: 100%;
+	display: flex;
+	.all-main{
+		width: 100%;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+	}
+	.child-section-1{
+		text-align: center;
+		width: 47.3%;
+		padding: 40px 10px;
+		background: #D9E8EB;
+		.whatsapp-business{
+			color: #47A8D5;
+		}
+		.caja{
+			display: flex;
+			place-content: center;
+			margin-top: 100px;
+			margin-bottom: -40px;
+			.second-cellphone{
+				width: 100%;
+				max-width: 300px;
+			}
+			.second-cellphone img{
+				width: 100%;
+			}
+		}		
+	}
+	h2{
+		font-weight: 600;
+		font-size: 30px;
+	}
+	p{
+		line-height: 22px;
+	}
+	.child-section-2{
+		text-align: center;
+		width: 47.3%;
+		padding: 40px 10px;
+		background: #E6F0E5;
+		display: flex;
+		place-content: center;
+		flex-flow: column wrap;
+		gap: 10px;
+		.caja2{
+			display: flex;
+			place-content: center;
+			.hello{
+			width: 100%;
+			max-width: 350px;
+			border-radius: 50%;
+			margin-bottom: 25px;
+		}
+		.hello img{
+			width: 100%;
+		}
+	}
+	h3{
+		letter-spacing: 1px;
+		font-size: 13px;
+		color: #5C5E5B;
+		font-weight: 800;
+	}
+	h4{
+		margin-top: -5px;
+		font-size: 30px;
+		font-weight: 800;
+	}
+	.text-main{
+		margin: 0 auto;
+		width: 71%;
+	}
+}
+}
+
+@media (max-width: 742px){
+	main{
+		.all-main{
+			gap: 20px;
+		}
+		.child-section-1, .child-section-2{
+			padding: 10px 10px;
+			width: 90%;
+			margin: 0 auto;
+			.caja{
+			display: flex;
+			place-content: center;
+			margin-top: 100px;
+			margin-bottom: -10px;
+			.second-cellphone{
+				width: 100%;
+				max-width: 300px;
+			}
+			.second-cellphone img{
+				width: 100%;
+			}
+		}		
+	}
+}
+}
+
+main.open{
+	visibility: hidden;
+	opacity: 0;
+	display: none;
+}
